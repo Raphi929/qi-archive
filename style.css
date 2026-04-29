@@ -28,3 +28,47 @@ a { color: #007bff; text-decoration: none; font-weight: bold; }
 td {
     vertical-align: middle;
 }
+/* 전체 레이아웃 */
+.container {
+    display: flex;       /* 가로로 배치 */
+    gap: 40px;           /* 메뉴와 본문 사이 간격 */
+    max-width: 1200px;   /* 전체 최대 너비 */
+    margin: 0 auto;
+}
+
+/* 사이드바 스타일 */
+.sidebar {
+    width: 150px;
+    position: sticky;    /* 스크롤을 내려도 화면에 고정 */
+    top: 20px;           /* 상단에서 20px 떨어진 곳에 고정 */
+    height: fit-content;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    border-left: 3px solid #eee; /* 왼쪽에 얇은 줄 */
+}
+
+.sidebar li a {
+    display: block;
+    padding: 10px 15px;
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar li a:hover {
+    color: #007bff;
+    background-color: #f8f9fa;
+}
+
+/* 본문 스타일 */
+.content {
+    flex: 1;             /* 남은 공간을 다 차지함 */
+}
+
+/* 부드러운 스크롤 효과 */
+html {
+    scroll-behavior: smooth;
+}
