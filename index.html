@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QI 아카이브 - 보고서 및 포스터</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'QI 아카이브',
-      loadSidebar: true,
-      subMaxLevel: 2
-    }
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <header>
+        <h1>🏥 QI 활동 아카이브</h1>
+        <p>연도별/부서별 보고서와 포스터를 확인하세요.</p>
+    </header>
+
+    <main>
+        <section class="year-section">
+            <h2>2024년도</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>부서</th>
+                        <th>구분</th>
+                        <th>제목</th>
+                        <th>링크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>내과</td>
+                        <td>보고서</td>
+                        <td>환자 안전 관리 개선 방안</td>
+                        <td><a href="assets/2024/reports/internal_01.pdf" target="_blank">열기</a></td>
+                    </tr>
+                    <tr>
+                        <td>간호부</td>
+                        <td>포스터</td>
+                        <td>손 씻기 캠페인 결과</td>
+                        <td><a href="assets/2024/posters/nursing_01.jpg" target="_blank">보기</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
 </body>
 </html>
